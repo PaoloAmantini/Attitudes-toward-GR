@@ -206,7 +206,7 @@ dat$age_gr <- ifelse(dat$AGE<=35,1,
 
 
 gee<- dat%>%
-  group_by(age_gr)%>%
+  group_by(age_gr,C_ALPHAN)%>%
   count()%>%
   ungroup()
 gee
